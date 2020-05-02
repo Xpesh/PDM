@@ -122,6 +122,12 @@
             <artifactId>vaadin-testbench</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!---->
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-split-layout-flow</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
