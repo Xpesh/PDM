@@ -1,8 +1,16 @@
-package com.gmail.client.entity;
+package com.gmail.shared.entity;
 
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
 import java.util.Date;
 
+//@Entity
 public class Passport extends Identifier {
+//    @Id
+//    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
     private String firstName;
     private String familyName;
     private String patronymic;
@@ -21,10 +29,11 @@ public class Passport extends Identifier {
         Man, Woman
     }
 
-    public Passport(int id, String firstName, String familyName, String patronymic, int series, int number,
+    public Passport() {}
+
+    public Passport(String firstName, String familyName, String patronymic, int series, int number,
                     int departmentCode, Date dateIssue, String placeIssue, int personalCode,
                     Sex sex, String placeBirth, Date dateBirth) {
-        super(id);
         this.firstName = firstName;
         this.familyName = familyName;
         this.patronymic = patronymic;
@@ -37,6 +46,14 @@ public class Passport extends Identifier {
         this.sex = sex;
         this.placeBirth = placeBirth;
         DateBirth = dateBirth;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {

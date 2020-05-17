@@ -1,6 +1,7 @@
 package com.gmail.client.view.entityView;
 
-import com.gmail.client.entity.Passport;
+import com.gmail.shared.entity.Passport;
+
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
@@ -23,7 +24,7 @@ public final class PassportView {
     public static final String DATE_BIRTH = "Дата рождения";
 
     //todo hack
-    Passport passportTest = new Passport(0,"Василий","Собаев", "Иванович",
+    Passport passportTest = new Passport("Василий","Собаев", "Иванович",
             4567, 123456, 636789,new Date(2013,10,30),
             "г.Воронеж", 1488228,Passport.Sex.Man, "г.Саранск",
             new Date(1999,10,30));
